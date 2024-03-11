@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3159fa4-f937-43d3-b8b6-fc96dc5f53d4" name="Changes" comment="" />
+    <list default="true" id="c3159fa4-f937-43d3-b8b6-fc96dc5f53d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/scraping/Watches.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/all_reviews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/reviews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/scrape_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,15 +34,20 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2dDAxLEZudNKFFULxCyiNXVwhIH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "Python tests.Python tests in test1.py.executor": "Run",
     "Python tests.Python tests in testsite.py.executor": "Run",
+    "Python.all_reviews.executor": "Run",
     "Python.amazon_bs4.executor": "Run",
     "Python.amazon_watches.executor": "Run",
     "Python.beautifulsoup.executor": "Run",
@@ -43,6 +57,9 @@
     "Python.indeed.executor": "Run",
     "Python.indeed_new.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.reviews.executor": "Run",
+    "Python.scrape_test.executor": "Run",
+    "Python.task1.executor": "Run",
     "Python.test.executor": "Run",
     "Python.test1.executor": "Run",
     "Python.testsite.executor": "Run",
@@ -95,14 +112,7 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/amazon_watches.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -47,7 +47,7 @@ driver.execute_script("window.scrollTo(0,300)")
 sleep(5)
 # scraped from here
 
-for npage in range(1,4):
+for npage in range(3,6):
 
     for i in range(1,15):
         try:
@@ -86,36 +86,34 @@ for npage in range(1,4):
     sleep(5)
 
     #--------------------next page--------------#
+    new_page = driver.find_element(By.XPATH, "/html/body/main/div/div[1]/div/div[5]/div/div[1]/nav/ul/li[{0}]/a".format(npage))
+    new_page.click()
+    sleep(5
+          )
+    box = driver.find_element(By.XPATH,'//*[@id="mosaic-desktopserpjapopup"]')
+
+
     try:
-        next_page = driver.find_element(By.XPATH,"/html/body/main/div/div[1]/div/div[5]/div/div[1]/nav/ul/li[6]/a")
-        next_page.click()
-        print("hello page 2")
-    # sleep(5)
-    except:
-        next_page = driver.find_element(By.XPATH,"/html/body/main/div/div[1]/div/div[5]/div/div[1]/nav/ul/li[7]/a")
-        next_page.click()
-        print("page3")
-    sleep(5)
-    try:
-        exit_button = driver.find_element(By.XPATH,'//*[@id="mosaic-desktopserpjapopup"]/div[1]/button')
+        exit_button = box.find_element(By.XPATH,'//*[@id="mosaic-desktopserpjapopup"]/div[1]/button')
         exit_button.click()
         try:
-            exit_button = driver.find_element(By.CLASS_NAME,"css-yi9ndv e8ju0x51")
+            exit_button = box.find_element(By.CLASS_NAME,"css-yi9ndv e8ju0x51")
             exit_button.click()
         except:
             print("class  not found")
             pass
         try:
-            exit_button = driver.find_element(By.XPATH,'//*[@id="mosaic-desktopserpjapopup"]/div[1]/button/svg')
+            exit_button = box.find_element(By.XPATH,'//*[@id="mosaic-desktopserpjapopup"]/div[1]/button/svg')
             exit_button.click()
         except:
             print("svg x path not found")
             pass
     except:
         print("not found")
-        pass
+
 
 # print(job_title)
 df = pd.DataFrame({"JOB_TITLE":job_title,"Company":job_company,"Location":company_location,"Description":company_description})
-df.to_excel("indeed.xlsx")
+# df.to_excel("indeed.xlsx")
 print(df)
+
